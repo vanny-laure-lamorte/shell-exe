@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Utilisateur dont on veut compter les connexions
+utilisateur="vanny"
+
+#Extraire les lignes de journal pertinentes
+connexions=$(grep "sshd.*Accepted.*${utilisateur}" /var/log/auth.log* | wc -l)
+echo "L'utilisateur ${utilisateur} s'est connecté ${connexions} fois."
+
+#Créer la variable date en mettant la fonction date; sous format jj-mm-aaaa-HH:MM
+
+
+# Variable sortie
