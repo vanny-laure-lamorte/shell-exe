@@ -31,6 +31,12 @@ sudo rm -rf /home/prenomNom
 	echo "L'utilisateur $nom_utilisateur est un super utilisateur"
 sudo userdel prenomNom
 
+	fi
+else
+ fi
+echo "erreur pour la création de  l'utilisateur $nom_utilisateur"
 fi
+
+
 done < "$csv_file"
 
